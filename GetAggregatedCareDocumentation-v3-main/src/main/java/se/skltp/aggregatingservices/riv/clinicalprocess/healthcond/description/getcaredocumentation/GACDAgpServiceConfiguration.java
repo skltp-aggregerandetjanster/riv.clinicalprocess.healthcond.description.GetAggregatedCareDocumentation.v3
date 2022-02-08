@@ -20,7 +20,7 @@ public static final String SCHEMA_PATH = "/schemas/clinicalprocess_healthcond_de
     setTargetNamespace("urn:riv:clinicalprocess:healthcond:description:GetCareDocumentation:3:rivtabp21");
 
     // Set inbound defaults
-    setInboundServiceURL("http://localhost:9028/getaggregatedcaredocumentation/service/v3");
+    setInboundServiceURL("http://localhost:9028/GetAggregatedCareDocumentation/service/v3");
     setInboundServiceWsdl(SCHEMA_PATH);
     setInboundServiceClass(GetCareDocumentationResponderInterface.class.getName());
     setInboundPortName(GetCareDocumentationResponderService.GetCareDocumentationResponderPort.toString());

@@ -2,8 +2,10 @@ package se.skltp.aggregatingservices.riv.clinicalprocess.healthcond.description.
 
 import java.util.List;
 import lombok.extern.log4j.Log4j2;
+import riv.clinicalprocess.healthcond.description.enums.v3.ResultCodeEnum;
 import riv.clinicalprocess.healthcond.description.getcaredocumentationresponder.v3.GetCareDocumentationResponseType;
 import riv.clinicalprocess.healthcond.description.getcaredocumentationresponder.v3.GetCareDocumentationType;
+import riv.clinicalprocess.healthcond.description.v3.ResultType;
 import se.skltp.aggregatingservices.AgServiceFactoryBase;
 
 @Log4j2
@@ -17,7 +19,7 @@ public class GACDAgpServiceFactoryImpl extends
 
   @Override
   public String getSourceSystemHsaId(GetCareDocumentationType queryObject) {
-    return queryObject.getSourceSystemId().getExtension();
+    return (queryObject.getSourceSystemId() == null) ? null : queryObject.getSourceSystemId().getRoot();
   }
 
   @Override
@@ -29,6 +31,10 @@ public class GACDAgpServiceFactoryImpl extends
       GetCareDocumentationResponseType response = item;
       aggregatedResponse.getCareDocumentation().addAll(response.getCareDocumentation());
     }
+
+    ResultType result = new ResultType();
+    result.setResultCode(ResultCodeEnum.INFO);
+    aggregatedResponse.setResult(result);
 
     return aggregatedResponse;
   }

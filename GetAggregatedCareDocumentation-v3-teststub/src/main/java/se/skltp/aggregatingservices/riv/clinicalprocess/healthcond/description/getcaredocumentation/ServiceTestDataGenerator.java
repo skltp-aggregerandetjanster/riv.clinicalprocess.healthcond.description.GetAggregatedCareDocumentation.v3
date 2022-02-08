@@ -43,12 +43,15 @@ public class ServiceTestDataGenerator extends TestDataGenerator {
 
 		AccessControlHeaderType accessControlHeader = new AccessControlHeaderType();
 		IIType accountableHealthcareProvider = new IIType();
+		accountableHealthcareProvider.setRoot("1.2.752.129.2.1.4.1");
+		accountableHealthcareProvider.setExtension(logicalAddress + "-0001" + ThreadLocalRandom.current().nextInt(20));
 		accessControlHeader.setAccountableHealthcareProvider(accountableHealthcareProvider);
+		accessControlHeader.setBlockComparisonTime(time);
 		header.setAccessControlHeader(accessControlHeader);
 
 		IIType sourceSystem = new IIType();
 		sourceSystem.setRoot("1.2.752.129.2.1.4.1");
-		sourceSystem.setExtension(logicalAddress + "-"  + ThreadLocalRandom.current().nextInt(20));
+		sourceSystem.setExtension(logicalAddress);
 		header.setSourceSystemId(sourceSystem);
 
 		RecordType record = new RecordType();
