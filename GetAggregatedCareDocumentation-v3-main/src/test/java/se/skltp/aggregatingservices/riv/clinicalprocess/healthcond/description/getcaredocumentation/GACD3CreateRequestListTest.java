@@ -5,9 +5,9 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 import se.skltp.aggregatingservices.tests.CreateRequestListTest;
 
 @ExtendWith(SpringExtension.class)
-public class GACDCreateRequestListTest extends CreateRequestListTest {
+public class GACD3CreateRequestListTest extends CreateRequestListTest {
 
-  public GACDCreateRequestListTest() {
-    super(new ServiceTestDataGenerator(), new GACDAgpServiceFactoryImpl(), new GACDAgpServiceConfiguration());
+  public GACD3CreateRequestListTest() {
+    super(new ServiceTestDataGenerator(), new GACD3AgpServiceFactoryImpl(), new GACD3AgpServiceConfiguration());
   }
 }

@@ -6,10 +6,10 @@ import se.skltp.aggregatingservices.tests.CreateFindContentTest;
 
 
 @ExtendWith(SpringExtension.class)
-public class GACDCreateFindContentTest extends CreateFindContentTest {
+public class GACDC3reateFindContentTest extends CreateFindContentTest {
 
-  public GACDCreateFindContentTest() {
-    super(new ServiceTestDataGenerator(), new GACDAgpServiceFactoryImpl(), new GACDAgpServiceConfiguration());
+  public GACDC3reateFindContentTest() {
+    super(new ServiceTestDataGenerator(), new GACD3AgpServiceFactoryImpl(), new GACD3AgpServiceConfiguration());
   }
 
 }

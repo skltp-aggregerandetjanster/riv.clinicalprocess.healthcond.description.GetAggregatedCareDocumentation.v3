@@ -7,10 +7,10 @@ import se.skltp.aggregatingservices.tests.CreateAggregatedResponseTest;
 
 
 @ExtendWith(SpringExtension.class)
-public class GACDCreateAggregatedResponseTest extends CreateAggregatedResponseTest {
+public class GACD3CreateAggregatedResponseTest extends CreateAggregatedResponseTest {
 
-  public GACDCreateAggregatedResponseTest() {
-      super(new ServiceTestDataGenerator(), new GACDAgpServiceFactoryImpl(), new GACDAgpServiceConfiguration());
+  public GACD3CreateAggregatedResponseTest() {
+      super(new ServiceTestDataGenerator(), new GACD3AgpServiceFactoryImpl(), new GACD3AgpServiceConfiguration());
   }
 
   @Override

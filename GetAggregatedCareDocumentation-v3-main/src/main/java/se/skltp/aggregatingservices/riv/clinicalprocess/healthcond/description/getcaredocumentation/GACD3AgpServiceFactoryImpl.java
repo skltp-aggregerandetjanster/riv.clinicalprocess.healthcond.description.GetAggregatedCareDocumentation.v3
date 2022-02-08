@@ -9,7 +9,7 @@ import riv.clinicalprocess.healthcond.description.v3.ResultType;
 import se.skltp.aggregatingservices.AgServiceFactoryBase;
 
 @Log4j2
-public class GACDAgpServiceFactoryImpl extends
+public class GACD3AgpServiceFactoryImpl extends
     AgServiceFactoryBase<GetCareDocumentationType, GetCareDocumentationResponseType>{
 
   @Override
