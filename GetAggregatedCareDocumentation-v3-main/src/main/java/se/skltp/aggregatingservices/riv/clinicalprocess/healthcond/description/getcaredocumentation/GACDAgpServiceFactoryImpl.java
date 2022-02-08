@@ -14,12 +14,12 @@ public class GACDAgpServiceFactoryImpl extends
 
   @Override
   public String getPatientId(GetCareDocumentationType queryObject) {
-    return queryObject.getPatientId().getExtension();
+    return (queryObject.getPatientId() == null) ? null :queryObject.getPatientId().getExtension();
   }
 
   @Override
   public String getSourceSystemHsaId(GetCareDocumentationType queryObject) {
-    return (queryObject.getSourceSystemId() == null) ? null : queryObject.getSourceSystemId().getRoot();
+    return (queryObject.getSourceSystemId() == null) ? null : queryObject.getSourceSystemId().getExtension();
   }
 
   @Override
