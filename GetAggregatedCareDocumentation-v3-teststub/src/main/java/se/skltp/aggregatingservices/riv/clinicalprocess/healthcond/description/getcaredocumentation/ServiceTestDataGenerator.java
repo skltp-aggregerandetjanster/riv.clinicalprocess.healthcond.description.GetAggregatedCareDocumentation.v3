@@ -5,9 +5,11 @@ import org.apache.cxf.message.MessageContentsList;
 import org.springframework.stereotype.Service;
 import riv.clinicalprocess.healthcond.description.getcaredocumentationresponder.v3.GetCareDocumentationResponseType;
 import riv.clinicalprocess.healthcond.description.getcaredocumentationresponder.v3.GetCareDocumentationType;
+import riv.clinicalprocess.healthcond.description.getcaredocumentationresponder.v3.HasMoreType;
 import riv.clinicalprocess.healthcond.description.v3.*;
 import se.skltp.aggregatingservices.data.TestDataGenerator;
 
+import java.util.UUID;
 import java.util.concurrent.ThreadLocalRandom;
 
 @Log4j2
@@ -26,7 +28,15 @@ public class ServiceTestDataGenerator extends TestDataGenerator {
 		log.info("Creating a response with {} items", responseItems.length);
 		GetCareDocumentationResponseType response = new GetCareDocumentationResponseType();
 		for (int i = 0; i < responseItems.length; i++) {
-			response.getCareDocumentation().add((CareDocumentationType)responseItems[i]);
+			CareDocumentationType responseItem = (CareDocumentationType)responseItems[i];
+			response.getCareDocumentation().add(responseItem);
+			String logicalAddress = responseItem.getHeader().getSourceSystemId().getExtension();
+			if (logicalAddress.equals("HSA-ID-5") || logicalAddress.equals("HSA-ID-6")) {
+				HasMoreType hasMore = new HasMoreType();
+				hasMore.setLogicalAddress(logicalAddress);
+				hasMore.setReference(UUID.randomUUID().toString());
+				response.getHasMore().add(hasMore);
+			}
 		}
 
 		log.info("response.toString:" + response.toString());

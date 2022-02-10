@@ -14,6 +14,12 @@ public class GACD3AgpServiceFactoryImpl extends
 
   @Override
   public String getPatientId(GetCareDocumentationType queryObject) {
+
+    // Saknar bättre ställe att göra validering av anropet
+    if (queryObject.getHasMoreReference() != null) {
+      throw new IllegalArgumentException("Parametern hasMoreReference skall inte användas i anrop till aggregerande tjänst");
+    }
+
     return (queryObject.getPatientId() == null) ? null :queryObject.getPatientId().getExtension();
   }
 
@@ -27,9 +33,9 @@ public class GACD3AgpServiceFactoryImpl extends
 
     GetCareDocumentationResponseType aggregatedResponse=new GetCareDocumentationResponseType();
 
-    for (GetCareDocumentationResponseType item : aggregatedResponseList) {
-      GetCareDocumentationResponseType response = item;
+    for (GetCareDocumentationResponseType response : aggregatedResponseList) {
       aggregatedResponse.getCareDocumentation().addAll(response.getCareDocumentation());
+      aggregatedResponse.getHasMore().addAll(response.getHasMore());
     }
 
     ResultType result = new ResultType();
