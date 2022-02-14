@@ -51,9 +51,9 @@
   </build>
 
   <scm>
-    <url>http://github.com/skltp-aggregerandetjanster/riv.clinicalprocess.healthcond.description.GetAggregatedCareDocumentation</url>
-    <connection>scm:git:https://github.com:443/skltp-aggregerandetjanster/riv.clinicalprocess.healthcond.description.GetAggregatedCareDocumentation.git</connection>
-    <developerConnection>scm:git:https://github.com:443/skltp-aggregerandetjanster/riv.clinicalprocess.healthcond.description.GetAggregatedCareDocumentation.git</developerConnection>
+    <url>http://github.com/skltp-aggregerandetjanster/riv.clinicalprocess.healthcond.description.GetAggregatedCareDocumentation.v3</url>
+    <connection>scm:git:https://github.com:443/skltp-aggregerandetjanster/riv.clinicalprocess.healthcond.description.GetAggregatedCareDocumentation.v3.git</connection>
+    <developerConnection>scm:git:https://github.com:443/skltp-aggregerandetjanster/riv.clinicalprocess.healthcond.description.GetAggregatedCareDocumentation.v3.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
 
