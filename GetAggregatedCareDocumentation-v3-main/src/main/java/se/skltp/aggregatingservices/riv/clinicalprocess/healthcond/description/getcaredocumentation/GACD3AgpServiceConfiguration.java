@@ -12,7 +12,7 @@ import riv.clinicalprocess.healthcond.description.getcaredocumentation.v3.rivtab
 @ConfigurationProperties(prefix = "getaggregatedcaredocumentation.v3")
 public class GACD3AgpServiceConfiguration extends se.skltp.aggregatingservices.configuration.AgpServiceConfiguration {
 
-public static final String SCHEMA_PATH = "/schemas/clinicalprocess_healthcond_description_3.0_RC5/interactions/GetCareDocumentationInteraction/GetCareDocumentationInteraction_3.0_RIVTABP21.wsdl";
+public static final String SCHEMA_PATH = "/schemas/Domain_3.0_RC8/interactions/GetCareDocumentationInteraction/GetCareDocumentationInteraction_3.0_RIVTABP21.wsdl";
 
   public GACD3AgpServiceConfiguration() {
 

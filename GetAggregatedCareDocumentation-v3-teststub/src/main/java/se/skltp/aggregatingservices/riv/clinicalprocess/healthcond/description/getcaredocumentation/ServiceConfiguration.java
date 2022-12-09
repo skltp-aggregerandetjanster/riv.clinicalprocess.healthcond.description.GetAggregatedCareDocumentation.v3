@@ -12,7 +12,7 @@ import se.skltp.aggregatingservices.config.TestProducerConfiguration;
 @ConfigurationProperties(prefix="getaggregatedcaredocumentation.v3.teststub")
 public class ServiceConfiguration extends TestProducerConfiguration {
 
-  public static final String SCHEMA_PATH = "/schemas/clinicalprocess_healthcond_description_3.0_RC5/interactions/GetCareDocumentationInteraction/GetCareDocumentationInteraction_3.0_RIVTABP21.wsdl";
+  public static final String SCHEMA_PATH = "/schemas/Domain_3.0_RC8/interactions/GetCareDocumentationInteraction/GetCareDocumentationInteraction_3.0_RIVTABP21.wsdl";
 
   public ServiceConfiguration() {
     setProducerAddress("http://localhost:8083/vp");

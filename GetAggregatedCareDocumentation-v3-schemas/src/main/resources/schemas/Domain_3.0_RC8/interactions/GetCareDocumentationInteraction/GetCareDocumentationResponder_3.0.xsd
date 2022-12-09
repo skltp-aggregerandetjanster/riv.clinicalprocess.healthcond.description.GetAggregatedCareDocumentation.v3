@@ -39,7 +39,6 @@
 			<xs:element name="patientId" type="core:IIType"/>
 			<xs:element name="datePeriod" type="core:DatePeriodType" minOccurs="0"/>
 			<xs:element name="sourceSystemId" type="core:IIType" minOccurs="0"/>
-			<xs:element name="careContactId" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
 			<xs:element name="hasMoreReference" type="xs:string" minOccurs="0"/>
 			<xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:sequence>

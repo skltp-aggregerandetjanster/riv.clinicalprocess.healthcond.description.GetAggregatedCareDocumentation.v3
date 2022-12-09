@@ -42,7 +42,7 @@
 
     <xs:complexType name="CareDocumentationBodyType">
         <xs:sequence>
-            <xs:element name="clinicalDocumentNoteCode" type="codes:ClinicalDocumentNoteCodeEnum" minOccurs="0"/>
+            <xs:element name="clinicalDocumentNoteCode" type="codes:ClinicalDocumentNoteCodeEnum"/>
             <xs:element name="clinicalDocumentNoteTitle" type="xs:string" minOccurs="0"/>
             <xs:element name="clinicalDocumentNoteText" type="xs:string" minOccurs="0"/>
             <xs:element name="multimediaEntry" type="tns:MultimediaType" minOccurs="0"/>
@@ -81,11 +81,10 @@
 
     <xs:complexType name="AccessControlHeaderType">
         <xs:sequence>
-            <xs:element name="accountableHealthcareProvider" type="tns:IIType"/>
+            <xs:element name="accountableHealthcareProvider" type="tns:IIType" minOccurs="0"/>
             <xs:element name="accountableCareUnit" type="tns:IIType" minOccurs="0"/>
-            <xs:element name="originalPatientId" type="tns:IIType" minOccurs="0"/>
+            <xs:element name="patientId" type="tns:IIType"/>
             <xs:element name="careProcessId" type="tns:IIType" minOccurs="0"/>
-            <xs:element name="lockTime" type="tns:TimeStampType" minOccurs="0"/>
             <xs:element name="blockComparisonTime" type="tns:TimeStampType"/>
             <xs:element name="approvedForPatient" type="xs:boolean"/>
             <xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
@@ -106,6 +105,7 @@
             <xs:element name="name" type="xs:string" minOccurs="0"/>
             <xs:element name="timestamp" type="tns:TimeStampType"/>
             <xs:element name="byRole" type="tns:CVType" minOccurs="0"/>
+            <xs:element name="orgUnit" type="tns:OrgUnitType" minOccurs="0"/>
             <xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
@@ -208,5 +208,21 @@
             <xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
+
+    <xs:complexType name="OrgUnitType">
+        <xs:sequence>
+            <xs:element name="orgUnitHSAId" type="tns:HSAIdType" minOccurs="0"/>
+            <xs:element name="orgUnitName" type="xs:string" minOccurs="0"/>
+            <xs:element name="orgUnitTelecom" type="xs:string" minOccurs="0"/>
+            <xs:element name="orgUnitEmail" type="xs:string" minOccurs="0"/>
+            <xs:element name="orgUnitAddress" type="xs:string" minOccurs="0"/>
+            <xs:element name="orgUnitLocation" type="xs:string" minOccurs="0"/>
+            <xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="HSAIdType">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
 
 </xs:schema>
