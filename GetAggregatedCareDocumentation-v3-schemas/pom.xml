@@ -35,7 +35,7 @@
               <sourceRoot>${schema.gen.src.dir}</sourceRoot>
               <wsdlOptions>
                 <wsdloption>
-                  <wsdl>${schema.path}/Domain_3.0_RC8/interactions/GetCareDocumentationInteraction/GetCareDocumentationInteraction_3.0_RIVTABP21.wsdl</wsdl>
+                  <wsdl>${schema.path}/Domain_3.0_RC12/interactions/GetCareDocumentationInteraction/GetCareDocumentationInteraction_3.0_RIVTABP21.wsdl</wsdl>
 					 <extraargs>
 						<extraarg>-validate</extraarg>
 						<extraarg>-p</extraarg>
