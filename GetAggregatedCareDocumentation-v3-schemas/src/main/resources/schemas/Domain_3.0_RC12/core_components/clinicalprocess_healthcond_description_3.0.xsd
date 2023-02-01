@@ -42,7 +42,7 @@
 
     <xs:complexType name="CareDocumentationBodyType">
         <xs:sequence>
-            <xs:element name="clinicalDocumentNoteCode" type="codes:ClinicalDocumentNoteCodeEnum"/>
+            <xs:element name="clinicalDocumentNoteCode" type="tns:CVType"/>
             <xs:element name="clinicalDocumentNoteTitle" type="xs:string" minOccurs="0"/>
             <xs:element name="clinicalDocumentNoteText" type="xs:string" minOccurs="0"/>
             <xs:element name="multimediaEntry" type="tns:MultimediaType" minOccurs="0"/>
@@ -65,7 +65,7 @@
     <!--
         Below: Common header used in service contracts for JoL (Journal- och Läkemedel).
 
-        Version: JoL Header Fältregler_v1.5
+        Version: JoL Header Fältregler_v2.2
     -->
 
     <xs:complexType name="HeaderType">
@@ -125,6 +125,8 @@
         
         A helper type is a type used in one ore more of the domain schema common types.
         It can also be a type used in two or more service schemas.
+
+        Types are defined in version 17 of "De facto-konventioner för datatyper".
     -->
 
     <xs:complexType name="DatePeriodType">
@@ -159,7 +161,7 @@
 
     <xs:complexType name="MultimediaType">
         <xs:sequence>
-            <xs:element name="mediaType" type="codes:MediaTypeEnum"/>
+            <xs:element name="mediaType" type="xs:string"/>
             <xs:element name="value" type="xs:base64Binary" minOccurs="0"/>
             <xs:element name="reference" type="xs:anyURI" minOccurs="0"/>
             <xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
