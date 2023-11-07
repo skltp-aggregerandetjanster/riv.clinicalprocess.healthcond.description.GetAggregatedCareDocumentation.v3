@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project id="e92240ff-cae1-441f-89a1-7083cd029739" activeEnvironment="Default" name="GetAggregatedCareDocumentation3" resourceRoot="${projectDir}" soapui-version="5.7.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="af566c7d-c584-4c72-9d4a-aa4a9c30eed7" wsaVersion="NONE" name="GetCareDocumentationResponderBinding" type="wsdl" bindingName="{urn:riv:clinicalprocess:healthcond:description:GetCareDocumentation:3:rivtabp21}GetCareDocumentationResponderBinding" soapVersion="1_1" anonymous="optional" definition="../../../RIVCLI~1.V3/GETAGG~4/src/main/RESOUR~1/schemas/Domain_3.0_RC12/INTERA~1/GETCAR~1/GETCAR~1.WSD" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="file:/C:/Users/bjopet/source/RIVCLI~1.V3/GETAGG~4/src/main/RESOUR~1/schemas/Domain_3.0_RC12/INTERA~1/GETCAR~1/GETCAR~1.WSD"><con:part><con:url>file:/C:/Users/bjopet/source/RIVCLI~1.V3/GETAGG~4/src/main/RESOUR~1/schemas/Domain_3.0_RC12/INTERA~1/GETCAR~1/GETCAR~1.WSD</con:url><con:content><![CDATA[<!--Licensed to the Apache Software Foundation (ASF) under one
+<con:soapui-project id="e92240ff-cae1-441f-89a1-7083cd029739" activeEnvironment="Default" name="GetAggregatedCareDocumentation3" resourceRoot="${projectDir}" soapui-version="5.7.1" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="af566c7d-c584-4c72-9d4a-aa4a9c30eed7" wsaVersion="NONE" name="GetCareDocumentationResponderBinding" type="wsdl" bindingName="{urn:riv:clinicalprocess:healthcond:description:GetCareDocumentation:3:rivtabp21}GetCareDocumentationResponderBinding" soapVersion="1_1" anonymous="optional" definition="../../../RIVCLI~1.V3/GETAGG~4/src/main/RESOUR~1/schemas/Domain_3.0/INTERA~1/GETCAR~1/GETCAR~1.WSD" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="file:/C:/Users/bjopet/source/RIVCLI~1.V3/GETAGG~4/src/main/RESOUR~1/schemas/Domain_3.0/INTERA~1/GETCAR~1/GETCAR~1.WSD"><con:part><con:url>file:/C:/Users/bjopet/source/RIVCLI~1.V3/GETAGG~4/src/main/RESOUR~1/schemas/Domain_3.0/INTERA~1/GETCAR~1/GETCAR~1.WSD</con:url><con:content><![CDATA[<!--Licensed to the Apache Software Foundation (ASF) under one
  or more contributor license agreements. See the NOTICE file
  distributed with this work for additional information
  regarding copyright ownership. Sveriges Kommuner och Landsting licenses this file
@@ -65,7 +65,7 @@
       <soap:address location="http://tempuri.org"/>
     </wsdl:port>
   </wsdl:service>
-</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>file:\C:\Users\bjopet\source\RIVCLI~1.V3\GETAGG~4\src\main\RESOUR~1\schemas\Domain_3.0_RC12\INTERA~1\GETCAR~1\GetCareDocumentationResponder_3.0.xsd</con:url><con:content><![CDATA[<!--Licensed to the Apache Software Foundation (ASF) under one
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>file:\C:\Users\bjopet\source\RIVCLI~1.V3\GETAGG~4\src\main\RESOUR~1\schemas\Domain_3.0\INTERA~1\GETCAR~1\GetCareDocumentationResponder_3.0.xsd</con:url><con:content><![CDATA[<!--Licensed to the Apache Software Foundation (ASF) under one
  or more contributor license agreements. See the NOTICE file
  distributed with this work for additional information
  regarding copyright ownership. Sveriges Kommuner och Landsting licenses this file
@@ -116,7 +116,7 @@
       <xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
     </xs:sequence>
   </xs:complexType>
-</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>file:\C:\Users\bjopet\source\RIVCLI~1.V3\GETAGG~4\src\main\RESOUR~1\schemas\Domain_3.0_RC12\core_components\clinicalprocess_healthcond_description_3.0.xsd</con:url><con:content><![CDATA[<!--Licensed to the Apache Software Foundation (ASF) under one
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>file:\C:\Users\bjopet\source\RIVCLI~1.V3\GETAGG~4\src\main\RESOUR~1\schemas\Domain_3.0\core_components\clinicalprocess_healthcond_description_3.0.xsd</con:url><con:content><![CDATA[<!--Licensed to the Apache Software Foundation (ASF) under one
  or more contributor license agreements. See the NOTICE file
  distributed with this work for additional information
  regarding copyright ownership. Sveriges Kommuner och Landsting licenses this file
@@ -301,7 +301,7 @@
   <xs:simpleType name="HSAIdType">
     <xs:restriction base="xs:string"/>
   </xs:simpleType>
-</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>file:\C:\Users\bjopet\source\RIVCLI~1.V3\GETAGG~4\src\main\RESOUR~1\schemas\Domain_3.0_RC12\core_components\clinicalprocess_healthcond_description_enum_3.0.xsd</con:url><con:content><![CDATA[<!--Licensed to the Apache Software Foundation (ASF) under one
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>file:\C:\Users\bjopet\source\RIVCLI~1.V3\GETAGG~4\src\main\RESOUR~1\schemas\Domain_3.0\core_components\clinicalprocess_healthcond_description_enum_3.0.xsd</con:url><con:content><![CDATA[<!--Licensed to the Apache Software Foundation (ASF) under one
  or more contributor license agreements. See the NOTICE file
  distributed with this work for additional information
  regarding copyright ownership. Sveriges Kommuner och Landsting licenses this file
@@ -325,7 +325,7 @@
       <xs:enumeration value="INFO"/>
     </xs:restriction>
   </xs:simpleType>
-</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>file:\C:\Users\bjopet\source\RIVCLI~1.V3\GETAGG~4\src\main\RESOUR~1\schemas\Domain_3.0_RC12\core_components\itintegration_registry_1.0.xsd</con:url><con:content><![CDATA[<xs:schema targetNamespace="urn:riv:itintegration:registry:1" elementFormDefault="qualified" version="1.0" xmlns="urn:riv:itintegration:registry:1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>file:\C:\Users\bjopet\source\RIVCLI~1.V3\GETAGG~4\src\main\RESOUR~1\schemas\Domain_3.0\core_components\itintegration_registry_1.0.xsd</con:url><con:content><![CDATA[<xs:schema targetNamespace="urn:riv:itintegration:registry:1" elementFormDefault="qualified" version="1.0" xmlns="urn:riv:itintegration:registry:1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>Beskrivning: 	Grundläggande informationsobjekt för domänen itintegration:registry (adressering av tjänster)
 			
@@ -526,4 +526,4 @@
 
       </urn1:GetCareDocumentation>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="c38d8143-e92e-4a8b-84d6-b5c372c787a0"/><con:assertion type="Schema Compliance" id="f13ec5c6-90a4-4349-bf61-612f42d0de9e"><con:configuration/></con:assertion><con:assertion type="Not SOAP Fault Assertion" id="13697c44-8ae3-4939-a8d7-5f6f51dc3455" name="SOAP Fault"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties><con:property><con:name>agg-env</con:name><con:value>http://localhost:9028/GetAggregatedCareDocumentation/service/v3</con:value></con:property></con:properties></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="c38d8143-e92e-4a8b-84d6-b5c372c787a0"/><con:assertion type="Schema Compliance" id="f13ec5c6-90a4-4349-bf61-612f42d0de9e"><con:configuration/></con:assertion><con:assertion type="Not SOAP Fault Assertion" id="13697c44-8ae3-4939-a8d7-5f6f51dc3455" name="SOAP Fault"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties><con:property><con:name>agg-env</con:name><con:value>http://localhost:9028/GetAggregatedCareDocumentation/service/v3</con:value></con:property></con:properties></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
