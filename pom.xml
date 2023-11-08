@@ -11,7 +11,7 @@
 
   <groupId>se.skltp.aggregatingservices.riv.clinicalprocess.healthcond.description</groupId>
 	<artifactId>GetAggregatedCareDocumentation-v3</artifactId>
-	<version>1.0.0-RC5-SNAPSHOT</version>
+	<version>1.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>GetAggregatedCareDocumentation-v3</name>
 
