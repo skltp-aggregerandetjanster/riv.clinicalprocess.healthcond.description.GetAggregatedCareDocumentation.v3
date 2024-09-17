@@ -16,7 +16,7 @@
   <name>GetAggregatedCareDocumentation-v3</name>
 
   <properties>
-    <agp-parent.version>3.3.0-SNAPSHOT</agp-parent.version>
+    <agp-parent.version>4.0.0-RC1</agp-parent.version>
   </properties>
 
   <distributionManagement>
